@@ -26,7 +26,7 @@ bom = BotoMeter.Botometer(wait_on_ratelimit=True,
 #result = bom.check_account(1548959833)
 
 # Check a sequence of accounts
-accounts = ['@realdonaldtrump', '@295Cmpe']
+accounts = ['@realdonaldtrump']
 for screen_name, result in bom.check_accounts_in(accounts):
     # Do stuff with `screen_name` and `result`
     print(screen_name, result)
